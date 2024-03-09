@@ -14,4 +14,4 @@
     - name: Deploy static website
       copy:
         src: index.html
-        dest: /ar/www/html/
+        dest: /var/www/html/
