@@ -15,3 +15,9 @@
       copy:
         src: index.html
         dest: /var/www/html/index.html
+    
+    - name: Debug www directory
+      command: ls -l /var/www/html
+      register: www_directory
+    - debug:
+        msg: "Contents of /var/www/html: {{ www_directory.stdout }}"
